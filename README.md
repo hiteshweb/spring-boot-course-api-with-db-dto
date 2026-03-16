@@ -99,3 +99,5 @@ Content-Type: application/json
 
 6. Delete User (DELETE)
 DELETE http://localhost:8080/api/users/1
+
+Project code structure: project_structure.PNG
