@@ -62,3 +62,40 @@ user-management-api/
 
 
 Create DB: CREATE DATABASE user_management;
+
+
+1. Get All Users (GET)
+GET http://localhost:8080/api/users
+
+2. Create User (POST)
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@example.com",
+  "phone": "9876543210",
+  "address": "123 Main St, City, State"
+}
+
+3. Get User by ID (GET)
+GET http://localhost:8080/api/users/1
+
+4. Get User by Email (GET)
+GET http://localhost:8080/api/users/email/john@example.com
+
+5. Update User (PUT)
+PUT http://localhost:8080/api/users/1
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane@example.com",
+  "phone": "9876543210",
+  "address": "456 Oak Ave, City, State"
+}
+
+6. Delete User (DELETE)
+DELETE http://localhost:8080/api/users/1
